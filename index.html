@@ -506,9 +506,35 @@ font-weight: bold;
 </div>
 
 <!-- Success Message -->
+<!-- Success Message -->
+<div class="success-container">
 <div class="success-message" id="successMessage">
   I have received your message. I will revert to you soon!
 </div>
+</div>
+
+<style>
+/* Success Container Styling */
+.success-container {
+display: flex;
+justify-content: flex-end; /* Aligns the message to the right */
+margin-left: auto; /* Pushes the container to start from the center */
+width: 60%; /* Controls the width of the container */
+}
+
+/* Success Message Styling */
+.success-message {
+display: none; /* Hidden by default */
+padding: 10px;
+background: #38bdf8;
+color: #0f172a;
+border-radius: 5px;
+text-align: center;
+font-size: 16px;
+font-weight: bold;
+width: 100%; /* Matches the container width */
+}
+</style>
 
 
   
@@ -635,6 +661,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
       max-width: 600px;
       margin: 0 auto;
     }
+
 
 
 
