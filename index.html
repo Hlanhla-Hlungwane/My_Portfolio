@@ -388,6 +388,113 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 <!-- Contact Me Section -->
 <!-- Contact Me Section -->
+<!-- Contact Me Section -->
+<style>
+/* Contact Section Styling */
+.contact-section {
+background: url('Contact_me/Contact_Background.jpeg') no-repeat center center/cover, 
+            linear-gradient(135deg, #0f172a, #1e293b);
+padding: 50px 20px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+min-height: 100vh;
+color: #ffffff;
+font-family: 'Arial', sans-serif;
+}
+
+/* Title Styling */
+.contact-title {
+font-size: 36px;
+font-weight: bold;
+color: #38bdf8;
+margin-bottom: 10px;
+}
+
+.contact-description {
+font-size: 16px;
+color: #cbd5e1;
+margin-bottom: 30px;
+max-width: 600px;
+}
+
+/* Form Container */
+.contact-form {
+background: rgba(255, 255, 255, 0.05);
+padding: 30px;
+border-radius: 10px;
+width: 60%;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+color: #ffffff;
+margin-left: auto;
+}
+
+/* Form Title */
+.contact-form h2 {
+text-align: center;
+margin-bottom: 20px;
+font-size: 24px;
+color: #38bdf8;
+}
+
+/* Input and Textarea Styling */
+.contact-form label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+color: #cbd5e1;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #38bdf8;
+border-radius: 5px;
+background: transparent;
+color: #ffffff;
+font-size: 14px;
+}
+
+.contact-form textarea {
+resize: vertical;
+min-height: 100px;
+}
+
+/* Submit Button Styling */
+.contact-form button {
+width: 100%;
+padding: 12px;
+background: #38bdf8;
+border: none;
+border-radius: 25px;
+color: #0f172a;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+background: #0ea5e9;
+transform: scale(1.05);
+}
+
+/* Success Message Styling */
+.success-message {
+display: none;
+margin-top: 20px;
+padding: 10px;
+background: #38bdf8;
+color: #0f172a;
+border-radius: 5px;
+text-align: center;
+font-size: 16px;
+font-weight: bold;
+}
+</style>
+
 <div class="contact-section">
 <!-- Title and Description -->
 <div>
@@ -396,11 +503,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     I offer a range of services, including web development, UI/UX design, and digital marketing. 
     Let’s work together to bring your ideas to life!
   </p>
-</div>
-
-<!-- Success Message (Move this above the form) -->
-<div class="success-message" id="successMessage">
-  I have received your message. Thank you!
 </div>
 
 <!-- Contact Form -->
@@ -420,6 +522,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <button type="submit">Submit</button>
 </form>
+
+<!-- Success Message -->
+<div class="success-message" id="successMessage">
+  I have received your message. Thank you!
+</div>
 </div>
 
 <script>
@@ -460,6 +567,8 @@ document.getElementById('contactForm').addEventListener('submit', async function
   }
 });
 </script>
+
+
 
 
 
@@ -523,6 +632,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
       max-width: 600px;
       margin: 0 auto;
     }
+
 
 
 
