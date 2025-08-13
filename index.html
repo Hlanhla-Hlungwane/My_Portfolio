@@ -387,17 +387,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
 <!-- Contact Me Section -->
-<!-- modify this form HTML and place wherever you want your form -->
-<!-- Contact Form Section -->
 <style>
 /* Contact Section Styling */
 .contact-section {
 background: linear-gradient(135deg, #0f172a, #1e293b);
 padding: 50px 20px;
 display: flex;
-justify-content: center;
-align-items: center;
+flex-direction: column;
+align-items: flex-start;
 min-height: 100vh;
+color: #ffffff;
+font-family: 'Arial', sans-serif;
+}
+
+/* Title Styling */
+.contact-title {
+font-size: 36px;
+font-weight: bold;
+color: #38bdf8;
+margin-bottom: 10px;
+}
+
+.contact-description {
+font-size: 16px;
+color: #cbd5e1;
+margin-bottom: 30px;
+max-width: 600px;
 }
 
 /* Form Container */
@@ -405,11 +420,10 @@ min-height: 100vh;
 background: rgba(255, 255, 255, 0.05);
 padding: 30px;
 border-radius: 10px;
-max-width: 400px;
-width: 100%;
+width: 60%;
 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 color: #ffffff;
-font-family: 'Arial', sans-serif;
+margin-left: auto;
 }
 
 /* Form Title */
@@ -466,12 +480,22 @@ transform: scale(1.05);
 </style>
 
 <div class="contact-section">
+<!-- Title and Description -->
+<div>
+  <h1 class="contact-title">Get in Touch</h1>
+  <p class="contact-description">
+    I offer a range of services, including web development, UI/UX design, and digital marketing. 
+    Let’s work together to bring your ideas to life!
+  </p>
+</div>
+
+<!-- Contact Form -->
 <form
   class="contact-form"
   action="https://formspree.io/f/xanbvzbl"
   method="POST"
 >
-  <h2>Get in Touch</h2>
+  <h2>Contact Me</h2>
   <label for="name">Your Name:</label>
   <input type="text" id="name" name="name" required>
 
@@ -487,6 +511,7 @@ transform: scale(1.05);
   <button type="submit">Submit</button>
 </form>
 </div>
+
 
 
 
@@ -549,6 +574,7 @@ transform: scale(1.05);
       max-width: 600px;
       margin: 0 auto;
     }
+
 
 
 
